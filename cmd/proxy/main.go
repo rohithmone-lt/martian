@@ -273,6 +273,7 @@ func main() {
 	}
 
 	log.Printf("martian: starting proxy on %s and api on %s", l.Addr().String(), lAPI.Addr().String())
+	log.Printf("Making some changes")
 
 	tr := &http.Transport{
 		Dial: (&net.Dialer{
